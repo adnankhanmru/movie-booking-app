@@ -1,13 +1,12 @@
 package com.example.moviebookingapp.moviebookingapp.Entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Data;
+import org.springframework.data.relational.core.mapping.Table;
 
 @Data
 @Entity
+@Table
 public class Admin {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

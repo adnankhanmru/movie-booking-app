@@ -2,12 +2,14 @@ package com.example.moviebookingapp.moviebookingapp.Entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import org.springframework.data.relational.core.mapping.Table;
 
 import java.sql.Time;
 import java.util.List;
 
 @Data
 @Entity
+@Table
 public class Show {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
